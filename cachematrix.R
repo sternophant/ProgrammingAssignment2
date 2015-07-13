@@ -59,7 +59,7 @@ cacheSolve <- function(x, ...) {
     matrix <- x$get()
     
     # Calculate the inverse matrix.
-    inverse <- solve(matrix)
+    inverse <- solve(matrix, ...)
     
     # Store the inverse matrix within the "matrix" object.
     x$set_inverse(inverse)
